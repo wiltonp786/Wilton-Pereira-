@@ -48,6 +48,7 @@ int main()
 	for (i = 0; i < m; i++)
 		for (j = 0; j < n; j++)
 			cin >> A[i][j];
+}
 #include <iostream>
 #include <stdlib>
 using namesapce std;
@@ -110,13 +111,15 @@ void display()
 			{
 				cout << "LCM = " << max;
 				break;
-			}
+			
+}
 			else
 				++max;
 		} while (true);
 		return 0;
 #include <iostream>
 using namespace std;
+}
 
 int main()
 {
@@ -170,9 +173,10 @@ public:
 		if(imag < 0)
 			cout << "Output complex number: " << real <<imag <<"i";
 		else
-			cout << "Output complex number: " << real << "+" << imag <<"i";
-	}
-};
+			cout << "Output complex number: " << real << "+" << imag <<"i"
+
+}
+
 int main()
 {
 	complex c1, c2, result;
@@ -516,6 +520,7 @@ int main() {
 if (a == 0 && b ==0) {
 	cout << "undefined";
 	return 0;
+
 }
 while (b != 0) {
 	int temp = b;
@@ -532,7 +537,7 @@ using namespace std;
 void printDivisors(int n)
 {
 	for (int i = 1; i <= n; i++)
-	{
+	}
 		if(n % i == 0)
 			cout << i << "";
 	}
@@ -704,10 +709,12 @@ void print_patt(int row)
 	// the number of rows.
 	for (int i = 1; i <= row; i++)
 	{
+
 		//the inner loop maintains the
 		// number of column.
 		for (int j = 1; j <= i; j++)
 		{
+
 			// to print the numbers
 			cout << count << " ";
     // to keep increasing the count
@@ -717,61 +724,83 @@ void print_patt(int row)
 
 	// to proceed to next line.
 	cout <<"\n";
-	     }
-	 }
+	    
+  }
+}
 
 	 // Driver code
 	 int main()
 	 {
+
 	 	int row = 5;
 	 	print_patt(row);
 	 	return 0;
-	 }
+	 
+}
+
 #include <iostream>
 using namespace std;
 
 // Returns the sum of the first n natural numbers
 int recurSum(int n)
+
 {
+
 	if(n <= 1)
 		return n;
 	return n + recursum(n - 1);
+
 }
 
 int main()
-{
+
+}
+
 	int n = 5;
 	cout <<recurSum(n);
 	return 0;
+
 }
+
 #include <iostream>
 using namespace std;
 
 #define N 4
 // function to add two matrices
 void add(int A[][N], int B[] [N], int C[] [N])
-{
+
+}
+
 for (int i = 0; i < N; i++) {
 for (int j = 0; j < N; j++);
 C[i][j] = A[i][j] + B[i][j];
-       }
+       
+
   }
+ }
 }
+
 // Driver code
 int main()
+
 {
 	int A[N][N] = {
    {1, 1, 1,1},
    {2, 2, 2,2},
    {3, 3, 3,3},
    {4, 4, 4,4},
+
 };
+
 int B[N][N] = {
 	{1, 1, 1, 1},
 	{2, 2, 2, 2},
 	{3, 3, 3, 3},
 	{4, 4, 4, 4},
+
 };
+
+
 // Resultant matrix
 int C[N][N];
 add(A, B, C);
@@ -779,15 +808,23 @@ cout << "Result matrix is:\n";
 for(int i = 0; i < N; I++) {
 	for (int j = 0; j < N; j++){
 		cout << C[i][j] << " ";
+
+
 	}
+
 	cout << end1;
+
 }
+
 return 0;
+
 }
+
 #include <iostream>
 using namespace std;
 
 int main()
+
 {
 	int integerType;
 	char chartype;
@@ -797,36 +834,52 @@ int main()
 // the size of integer type(
 cout << "Size of int is:" <<sizeof(integertype) << "\n";
 //calculate and print
+
+
 }
 #include<iostream>
 using namespace std;
 //utility function
 int areaRectangle(int a, int b)
+
+
 {
 	int area = a * b;
 	return area;
+
+
 }
 int perimeterRectangle(int a, int b)
+
+
 {
 	int perimeter = 2*(a + b);
 	return perimeter;
+
 }
+
 //Driver code
 int main()
+
 {
+
 	int a = 5;
 	int b = 6;
 	cout <<"Area = " << Rectangle(a, b) <<
 	end1;
 cout << "Perimeter = " << perimeterRectangle(a, b);
 return 0;
+
 }
+
 #include <iostream>
 using namespace std;
 
 long long
 calculateEvenIndexSum(int n)
+
 {
+
 	if(n < 0)
 		return 0;
 	long long prev2 = 0
@@ -841,8 +894,12 @@ calculateEvenIndexSum(int n)
 			sum+= curr;
 		prev2 = prev1;
 		prev1 = curr;
+
+
 	}
+
 	return sum;
+
 }
 
 int main() {
@@ -852,75 +909,120 @@ int main() {
 	<<
 	calculateEvenindexsum(n);
 	return 0;
+
+
 	}
 #include <bits/stdc++.h>
 using namesapce std;
 
 /* function to print reverse of the passed string */
 void reverse(string str)
+
+
 {
+
 	if(str.size() == 0)
+
+
 	{
+
 		return;
+
 	}
+
 	reverse(str.substr(1));
 	cout << str[0];
+
 }
+
 /* Driver program to test above function */
 int main()
+
 {
+
 	string a = "Geeks for Geeks";
 	reverse(a);
 	return 0;
+
 }
+
 // this is code is contributed by rathbhupendra
+
 }
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 class programmer
+
 {
+
 private:
 	string name;
 public:
 	// Getter
 	string getName()
+
       {
+
       	return name;
+
       }
+
       // Setter
       void setName(string newName)
+
       {
+
       	name = newName;
+
       }
 };
+
 int main()
+
 {
+
 	programmer p;
 
 	p.setName("Geek");
 	cout << "Name = " << p.getName();
 	return 0;
+
 }
 
 #include <iostream>
 using namespace std;
 
 class Animal
+
 {
+
 public:
 	cout << "Animal mkes a sound" << end1;
+
 	    }
-	};
+  }
+}
+
+
 	class dog : public animal
+
 	{
+
 	public:
 		void sound()
+
 		{
+
 			cout << "Dog barks" << end1;
+
 		}
        }
 
+
        class cat : public animal
+
 }
+
